@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { FaCopy } from "react-icons/fa";
 import "./App.css"
 import { numbers, upperCaseLetters, lowerCaseLetters, specialCharacters } from './Character'
 import { toast, ToastContainer } from 'react-toastify'
@@ -94,9 +95,7 @@ const App = () => {
           </h2>
           <div className="generator__password">
             <h3 >{password}</h3>
-            <button onClick={handleCopyPassword} className="copy__btn">
-              copy
-            </button>
+            <FaCopy />
           </div>
           <div className="form-group">
             <label htmlFor="password-strength">Password length</label>
